@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?><!-- Generator: Gravit.io --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="0 0 1200 1000" width="1200" height="1000">
+  <defs>
+	<clipPath id="_clipPath_durt0ncdbwNPugjs8NkfJXQS3GzIw81X">
+	  <rect width="1200" height="1000"/>
+	</clipPath>
+  </defs>
+  <g clip-path="url(#_clipPath_durt0ncdbwNPugjs8NkfJXQS3GzIw81X)">
+	<path d=" M 366 194 L 914 194 L 958 638 L 722 806 L 242 806 L 242 282 L 366 194 Z " fill="rgb(209,209,209)"/>
+	<rect x="319" y="266" width="50" height="85.384" transform="matrix(1,0,0,1,0,0)" fill="rgb(74,134,232)"/>
+	<rect x="319" y="380.763" width="50" height="79.875" transform="matrix(1,0,0,1,0,0)" fill="rgb(74,134,232)"/>
+	<rect x="319" y="490.017" width="50" height="201.983" transform="matrix(1,0,0,1,0,0)" fill="rgb(74,134,232)"/>
+	<rect x="444" y="266" width="52" height="194.638" transform="matrix(1,0,0,1,0,0)" fill="rgb(74,134,232)"/>
+	<rect x="444" y="490.017" width="52" height="201.983" transform="matrix(1,0,0,1,0,0)" fill="rgb(74,134,232)"/>
+	<rect x="608" y="343" width="213" height="278" transform="matrix(1,0,0,1,0,0)" fill="rgb(74,134,232)"/>
+	<rect x="852.789" y="206.663" width="62" height="73" transform="matrix(0.997,-0.079,0.079,0.997,-16.46,70.645)" fill="rgb(74,134,232)"/>
+	<rect x="570.886" y="655.886" width="49.228" height="251" transform="matrix(0,1,-1,0,1376.886,185.886)" fill="rgb(74,134,232)"/>
+  </g>
+</svg>

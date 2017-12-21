@@ -1,0 +1,188 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28 nov. 2017, 11:34:58
+    Author     : DEV
+*/
+
+.map__image{
+  display: inline-block;
+
+}
+
+#map{
+  display: inline-block;
+  background-color: black;
+  height: 100%;
+  padding: 0;
+}
+#map_svg{
+  height: 100%;
+  width: 100%;
+  background-color: rgb(225, 231, 249);
+}
+
+
+
+#svg{
+  height: 100%;
+  width: 100%;
+}
+.map__list{
+  display: inline-block;
+  overflow: auto;
+}
+
+
+/* =========== SVG PATH ============ */
+.map__image path{
+  fill: rgba(255,255,255,0);
+  transition: fill 0.3s;
+  stroke: rgba(255, 255, 255, 0.5);
+  stroke-width: 1px;
+}
+.map__image path.is-active {
+  fill: white;
+  stroke: rgba(255,255,255,0.5);
+  stroke-width: 1px;
+}
+
+.map__image path.isSelected{
+  stroke: #ff9900;
+  stroke-width: 2px;
+  stroke-dasharray: 50;
+  animation: dash 10s linear;
+  animation-iteration-count: infinite;
+  fill: rgba(255, 204, 0, 0.8);
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+
+.map__list li.isSelected{
+  border-left: 0.5em solid gold;
+  margin-left: -0.5em;
+}
+
+path.places {
+}
+path.items {
+  stroke: rgba(255, 51, 0, 0.8);
+  stroke-width: 1px;
+  fill: rgba(255, 51, 0, 0.8);
+
+  pointer-events: none;
+}
+/* --------------------------------- */
+
+
+
+.svg-pan-zoom_viewport {
+  transition: transform 0.5s ease;
+}
+
+.svg-pan-zoom_viewport.isMoving {
+  transition: transform 0s ;
+}
+.map__list li{
+  color: inherit;
+  line-height: 1.4em;
+  text-decoration: none;
+  padding: 4px 10px;
+  background-color: white;
+  color: black;
+  list-style: none;
+  transition: color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.map__list li.is-active{
+  background-color: #00561b;
+  color: white;
+}
+
+.map__list li.is-active-parent{
+  background-color: #00cc41;
+  color: #003310;
+}
+
+#application{
+  height: 500px;
+}
+#application .row{
+  height: 100%;
+}
+
+.controls{
+  float: left;
+  position: absolute;
+}
+
+
+@media all and (max-width: 376px){
+  .map__list{
+
+	float: none;
+	margin: auto;
+  }
+}
+
+
+#mousePos{
+  background-color: white;
+}
+
+
+.hidden {
+  display: none !important;
+}
+
+.alert-area {
+  height: 1.8em;
+  width: 100%;
+  background-color: rgba(0,0,0,0.7);
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.alert-text {
+  text-align: center;
+  font-weight: bold;
+  color: gold;
+}
+
+.loading-mask {
+  background-color: rgba(0,0,0,0.95);
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: gold;
+  text-align: center;
+  padding-top: 30%;
+  z-index: 10;
+}
+
+.map__list.loading{
+  overflow: hidden;
+  padding: 0;
+}
+
+ul[class*="children-place"] li{
+  border-left: 1px solid gold;
+  margin-left: -1px;
+
+}
+
+ul[class*="children-place"]{
+  padding-left: 0;
+  margin-left: 40px;
+  margin-top: 8px;
+}

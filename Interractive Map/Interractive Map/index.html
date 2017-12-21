@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <title>IMOHK - Interractive Map Of Hyrule's Kingdom</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" href="css/bootstrap-reboot.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+  </head>
+  <body>
+	<div id="application" class="container-fluid">
+	  <div class="row">
+		<div class="col-sm-8" id="map">
+		  <div class="map__image" id="map_svg">
+			<div class="loading-mask">Chargement...</div>
+			<svg  id="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="0 0 518 470">
+			<defs>
+			<pattern id="img1" patternUnits="userSpaceOnUse" width="518" height="470">
+			  <image xlink:href="images/zelda-a-link-to-the-past-map.jpg" x="0" y="0" width="518" height="470" />
+			</pattern>
+			</defs>
+			<g class="svg-pan-zoom_viewport">
+			<rect x="0" y="0" width="518" height="470" fill="url(#img1)"/>
+			<g style="isolation:isolate" id="Lieux">
+			<path id="place-1" class="places"  d=" M 54 197 L 137 197 L 137 292 L 54 292 L 54 280 L 41 280 L 41 213 L 54 213 L 54 197 Z " fill="rgb(0,8,255)" fill-opacity="0.57"/>
+			<path id="place-2" class="places"  d=" M 29 350 L 118 350 L 133 365 L 154 365 L 154 387 L 172 387 L 172 465 L 29 465 L 29 350 Z " fill="rgb(0,42,255)" fill-opacity="0.59"/>
+			<path id="place-3" class="places"  d=" M 339 368 L 375 368 L 380 363 L 409 363 L 461 363 L 461 452 L 339 452 L 339 368 Z " fill="rgb(0,42,255)" fill-opacity="0.59"/>
+			<path id="place-4" class="places"  d=" M 178 73 L 192 59 L 192 44 L 219 17 L 274 17 L 278 4 L 298 4 L 302 17 L 466 17 L 480 31 L 480 46 L 470 56 L 454 56 L 426 86 L 426 114 L 413 127 L 220 127 L 207 114 L 207 101 L 192 101 L 178 86 L 178 73 Z " fill="rgb(0,8,255)" fill-opacity="0.57"/>
+			<path id="place-5" class="places"  d=" M 156 138 L 41 138 L 41 17 L 156 17 L 156 138 Z " fill="rgb(0,8,255)" fill-opacity="0.57"/>
+			<path id="place-6" class="places"  d=" M 64 46 L 44 46 L 44 23 L 64 23 L 64 46 Z " fill="rgb(0,8,255)" fill-opacity="0.57"/>
+			<path id="place-7" class="places"  d=" M 227 185 L 295 185 L 295 264 L 227 264 L 227 185 Z " fill="rgb(255,242,0)" fill-opacity="0.57"/>
+			<path id="place-8" class="places"  d=" M 288 317 L 272 317 L 267 322 L 243 322 L 243 337 L 288 337 L 288 317 Z " fill="rgb(255,242,0)" fill-opacity="0.57"/>
+			<path id="place-9" class="places"  d=" M 164 269 L 164 237 L 192 237 L 192 269 L 164 269 Z " fill="rgb(255,242,0)" fill-opacity="0.57"/>
+			<path id="place-10" class="places" d=" M 140 294 L 146 288 L 210 288 L 216 295 L 216 357 L 212 362 Q 158 363 157 362 Q 156 361 140 345 L 140 294 Z " fill="rgb(255,242,0)" fill-opacity="0.57"/>
+			<path id="place-11" class="places" d=" M 109 311 L 121 311 L 121 322 L 109 322 L 109 311 Z " fill="rgb(255,242,0)" fill-opacity="0.57"/>
+			<path id="place-12" class="places" d=" M 123 322 L 134 322 L 134 334 L 123 334 L 123 322 Z " fill="rgb(255,242,0)" fill-opacity="0.57"/>
+			<path id="place-13" class="places" d=" M 109 281 L 120 281 L 120 290 L 109 290 L 109 281 Z " fill="rgb(255,242,0)" fill-opacity="0.57"/>
+			<path id="place-14" class="places" d=" M 86 224 L 101 224 L 101 237 L 86 237 L 86 224 Z " fill="rgb(255,242,0)" fill-opacity="0.57"/>
+			<path id="place-15" class="places" d=" M 96 198 L 120 198 L 120 210 L 96 210 L 96 198 Z " fill="rgb(255,242,0)" fill-opacity="0.57"/>
+			<path id="place-16" class="places" d=" M 115 156 L 126 156 L 126 168 L 115 168 L 115 156 Z " fill="rgb(255,242,0)" fill-opacity="0.57"/>
+			<path id="place-17" class="places" d=" M 53 350 L 101 350 L 101 409 L 53 409 L 53 350 Z " fill="rgb(255,242,0)" fill-opacity="0.57"/>
+			<path id="place-18" class="places" d=" M 125 367 L 152 367 L 152 388 L 170 388 L 170 414 L 144 414 L 125 396 L 125 367 Z " fill="rgb(255,242,0)" fill-opacity="0.57"/>
+			<path id="place-19" class="places" d=" M 232 430 L 256 430 L 256 445 L 232 445 L 232 430 Z " fill="rgb(255,242,0)" fill-opacity="0.57"/>
+			<path id="place-20" class="places" d=" M 322 365 L 333 365 L 333 375 L 322 375 L 322 365 Z " fill="rgb(255,242,0)" fill-opacity="0.57"/>
+			<path id="place-21" class="places" d=" M 362 344 L 407 344 L 407 362 L 362 362 L 362 344 Z " fill="rgb(255,242,0)" fill-opacity="0.57"/>
+			<path id="place-22" class="places" d=" M 375 374 L 381 374 L 387 367 L 402 367 L 408 374 L 408 418 L 375 418 L 375 374 Z " fill="rgb(255,242,0)" fill-opacity="0.57"/>
+			<path id="place-23" class="places" d=" M 458 323 L 474 323 L 474 338 L 458 338 L 458 323 Z " fill="rgb(255,242,0)" fill-opacity="0.57"/>
+			<path id="place-24" class="places" d=" M 407 299 L 419 299 L 419 312 L 407 312 L 407 299 Z " fill="rgb(255,242,0)" fill-opacity="0.57"/>
+			<path id="place-25" class="places" d=" M 365 179 L 474 179 L 474 278 L 365 278 L 365 179 Z " fill="rgb(255,242,0)" fill-opacity="0.57"/>
+			<path id="place-26" class="places" d=" M 384 155 L 397 155 L 397 169 L 384 169 L 384 155 Z " fill="rgb(255,242,0)" fill-opacity="0.57"/>
+			<path id="place-27" class="places" d=" M 435 116 L 443 116 L 443 127 L 435 127 L 435 116 Z " fill="rgb(255,242,0)" fill-opacity="0.57"/>
+			<path id="place-28" class="places" d=" M 426 84 L 440 84 L 440 101 L 426 101 L 426 84 Z " fill="rgb(255,242,0)" fill-opacity="0.57"/>
+			<path id="place-29" class="places" d=" M 275 44 L 275 18 L 279 5 L 296 5 L 299 17 L 299 44 L 275 44 Z " fill="rgb(255,242,0)" fill-opacity="0.57"/>
+			<path id="place-30" class="places" d=" M 238 56 L 238 46 L 266 46 L 266 56 L 238 56 Z " fill="rgb(255,242,0)" fill-opacity="0.57"/>
+			<path id="place-31" class="places" d=" M 272 155 L 302 155 L 302 170 L 272 170 L 272 155 Z " fill="rgb(255,242,0)" fill-opacity="0.57"/>
+			<path id="place-32" class="places" d=" M 226 155 L 251 155 L 251 133 L 226 133 L 226 155 Z " fill="rgb(255,242,0)" fill-opacity="0.57"/>
+			<path id="place-33" class="places" d=" M 189 95 L 189 88 L 205 88 L 205 99 L 193 99 L 189 95 Z " fill="rgb(255,242,0)" fill-opacity="0.57"/>
+			<path id="place-34" class="places" d=" M 208 103 L 208 93 L 216 93 L 216 103 L 208 103 Z " fill="rgb(255,242,0)" fill-opacity="0.57"/>
+			<path id="place-35" class="places" d=" M 178 49 L 188 49 L 188 59 L 178 59 L 178 49 Z " fill="rgb(255,242,0)" fill-opacity="0.57"/>
+			</g>
+			<g style="isolation:isolate" id="Items">
+			<path id="item-1"  class="hidden items" d=" M 50 35 C 50 33 52 32 54 32 C 56 32 57 33 57 35 C 57 37 56 39 54 39 C 52 39 50 37 50 35 Z " fill="rgb(255,0,0)" fill-opacity="0.6"/>
+			<path id="item-2"  class="hidden items" d=" M 52 73 C 52 62 61 53 71 53 C 82 53 91 62 91 73 C 91 83 82 92 71 92 C 61 92 52 83 52 73 Z " fill="rgb(255,0,0)" fill-opacity="0.6"/>
+			<path id="item-3"  class="hidden items" d=" M 219 36 C 219 33 221 30 224 30 C 228 30 230 33 230 36 C 230 39 228 42 224 42 C 221 42 219 39 219 36 Z " fill="rgb(255,0,0)" fill-opacity="0.6"/>
+			<path id="item-4"  class="hidden items" d=" M 233 113 C 233 109 236 106 240 106 C 243 106 246 109 246 113 C 246 116 243 119 240 119 C 236 119 233 116 233 113 Z " fill="rgb(255,0,0)" fill-opacity="0.6"/>
+			<path id="item-5"  class="hidden items" d=" M 341 115 C 341 112 344 109 348 109 C 351 109 354 112 354 115 C 354 119 351 122 348 122 C 344 122 341 119 341 115 Z " fill="rgb(255,0,0)" fill-opacity="0.6"/>
+			<path id="item-6"  class="hidden items" d=" M 343 143 C 343 140 345 137 349 137 C 353 137 355 140 355 143 C 355 147 353 150 349 150 C 345 150 343 147 343 143 Z " fill="rgb(255,0,0)" fill-opacity="0.6"/>
+			<path id="item-7"  class="hidden items" d=" M 288 162 C 288 159 290 156 294 156 C 298 156 300 159 300 162 C 300 166 298 169 294 169 C 290 169 288 166 288 162 Z " fill="rgb(255,0,0)" fill-opacity="0.6"/>
+			<path id="item-8"  class="hidden items" d=" M 384 162 C 384 159 387 156 390 156 C 394 156 397 159 397 162 C 397 166 394 169 390 169 C 387 169 384 166 384 162 Z " fill="rgb(255,0,0)" fill-opacity="0.6"/>
+			<path id="item-9"  class="hidden items" d=" M 426 93 C 426 90 429 87 433 87 C 436 87 439 90 439 93 C 439 97 436 100 433 100 C 429 100 426 97 426 93 Z " fill="rgb(255,0,0)" fill-opacity="0.6"/>
+			<path id="item-10" class="hidden items" d=" M 454 203 C 454 199 457 196 461 196 C 464 196 467 199 467 203 C 467 206 464 209 461 209 C 457 209 454 206 454 203 Z " fill="rgb(255,0,0)" fill-opacity="0.6"/>
+			<path id="item-11" class="hidden items" d=" M 398 224 C 398 220 400 217 404 217 C 408 217 410 220 410 224 C 410 227 408 230 404 230 C 400 230 398 227 398 224 Z " fill="rgb(255,0,0)" fill-opacity="0.6"/>
+			<path id="item-12" class="hidden items" d=" M 440 355 C 440 352 443 349 447 349 C 450 349 453 352 453 355 C 453 359 450 362 447 362 C 443 362 440 359 440 355 Z " fill="rgb(255,0,0)" fill-opacity="0.6"/>
+			<path id="item-13" class="hidden items" d=" M 273 329 C 273 325 276 322 279 322 C 283 322 286 325 286 329 C 286 332 283 335 279 335 C 276 335 273 332 273 329 Z " fill="rgb(255,0,0)" fill-opacity="0.6"/>
+			<path id="item-14" class="hidden items" d=" M 161 316 C 161 312 164 309 168 309 C 171 309 174 312 174 316 C 174 319 171 322 168 322 C 164 322 161 319 161 316 Z " fill="rgb(255,0,0)" fill-opacity="0.6"/>
+			<path id="item-15" class="hidden items" d=" M 109 317 C 109 313 112 310 115 310 C 119 310 122 313 122 317 C 122 320 119 323 115 323 C 112 323 109 320 109 317 Z " fill="rgb(255,0,0)" fill-opacity="0.6"/>
+			<path id="item-16" class="hidden items" d=" M 101 259 C 101 256 104 253 108 253 C 111 253 114 256 114 259 C 114 263 111 266 108 266 C 104 266 101 263 101 259 Z " fill="rgb(255,0,0)" fill-opacity="0.6"/>
+			<path id="item-17" class="hidden items" d=" M 171 259 C 171 256 173 253 177 253 C 181 253 184 256 184 259 C 184 263 181 266 177 266 C 173 266 171 263 171 259 Z " fill="rgb(255,0,0)" fill-opacity="0.6"/>
+			<path id="item-18" class="hidden items" d=" M 254 209 C 254 206 257 203 261 203 C 264 203 267 206 267 209 C 267 213 264 216 261 216 C 257 216 254 213 254 209 Z " fill="rgb(255,0,0)" fill-opacity="0.6"/>
+			<path id="item-19" class="hidden items" d=" M 281 36 C 281 32 284 29 288 29 C 291 29 294 32 294 36 C 294 39 291 42 288 42 C 284 42 281 39 281 36 Z " fill="rgb(255,0,0)" fill-opacity="0.6"/>
+			<path id="item-20" class="hidden items" d=" M 67 368 C 67 365 70 362 74 362 C 77 362 80 365 80 368 C 80 372 77 375 74 375 C 70 375 67 372 67 368 Z " fill="rgb(255,0,0)" fill-opacity="0.6"/>
+			<path id="item-21" class="hidden items" d=" M 140 453 C 140 449 143 446 147 446 C 150 446 153 449 153 453 C 153 456 150 459 147 459 C 143 459 140 456 140 453 Z " fill="rgb(255,0,0)" fill-opacity="0.6"/>
+			</g>
+			</g>
+			</svg>
+		  </div>
+		  <div class="alert-area"><p class="alert-text">Chargement...</p></div>
+		</div>
+		<div class="map__list col-sm-4 loading">
+		  <div class="loading-mask">Chargement...</div>
+		  <div class="controlgroup">
+			<label for="showItems">Afficher les objets</label>
+			<input type="checkbox" name="showItems" id="showItems">
+		  </div>
+		  <ul id="svg_link-list">
+		  </ul>
+		</div>
+		<div class="controls">
+		  <button type="button" class="btn btn-dark" id="bt_zoomin"><i class="fas fa-search-plus"></i></button>
+		  <button type="button" class="btn btn-dark" id="bt_zoomout"><i class="fas fa-search-minus"></i></button>
+		  <button type="button" class="btn btn-dark" id="bt_reset"><i class="fas fa-expand"></i></button>
+		  <span id="mousePos"></span>
+		</div>
+	  </div>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-events.js"></script>
+	<script type="text/javascript" src="js/svg-pan-zoom.min.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+	<script type="text/javascript" src="js/hammer.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
+
+

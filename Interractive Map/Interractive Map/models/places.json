@@ -1,0 +1,44 @@
+{
+  "name": "Lieux d'Hyrule",
+  "lastUpdatedOn": "2017/12/11",
+  "places": [
+	{
+	  "pathId": 1,
+	  "name": "Village Cocorico",
+	  "childrenPlaces": [
+		{
+		  "pathId": 13,
+		  "name": "Auberge de cocorico"
+		},
+		{
+		  "pathId": 14,
+		  "name": "Girouette"
+		},
+		{
+		  "pathId": 15,
+		  "name": "Maison de SahasRahla"
+		}
+	  ]
+	}, 
+	{
+	  "pathId": 2,
+	  "name": "Desert du mystère"
+	}, 
+	{
+	  "pathId": 3,
+	  "name": "Lac Hylia"
+	}, 
+	{
+	  "pathId": 4,
+	  "name": "Montagne de la mort"
+	}, 
+	{
+	  "pathId": 5,
+	  "name": "Les bois perdus"
+	}, 
+	{
+	  "pathId": 6,
+	  "name": "Excalibur"
+	}
+  ]
+}
